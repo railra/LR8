@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinally1.BigTasksPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Имя" />
+            <Entry Text="{Binding Name}" />
+            <Label Text="Родитель" />
+            <Entry Text="{Binding Parrent}" />
+            <Label Text="Имя" />
+            <Entry Text="{Binding Discription}" />
+            <Label Text="Имя" />
+            <DatePicker Date="{Binding Date}" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Сохранить" Clicked="SaveFriend" />
+                <Button Text="Удалить" Clicked="DeleteFriend" />
+                <Button Text="Отмена" Clicked="Cancel" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
