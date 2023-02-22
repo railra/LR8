@@ -4,7 +4,7 @@
              x:Class="AppFinally1.PunishmentsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="labek" Text="Имя" />
+            <Label Text="Имя" />
             <Entry Text="{Binding Name}" />
             <Label Text="Описание" />
             <Entry Text="{Binding Discription}" />

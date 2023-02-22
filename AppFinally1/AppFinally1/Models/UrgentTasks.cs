@@ -14,7 +14,7 @@ namespace AppFinally1.Models
         public string Name { get; set; }
         public string Discription { get; set; }
         public string Date { get; set; }
-        public int PunishmentId { get; set; }
+        public int? PunishmentId { get; set; }
         [NotNull]
         public bool Completed { get; set; }
 

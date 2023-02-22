@@ -10,6 +10,8 @@
             <Entry Text="{Binding Parrent}" />
             <Label Text="Описание" />
             <Entry Text="{Binding Discription}" />
+            <Label Text="Дата" />
+            <DatePicker Date="{Binding Date}" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Сохранить" Clicked="SaveFriend" />
                 <Button Text="Удалить" Clicked="DeleteFriend" />

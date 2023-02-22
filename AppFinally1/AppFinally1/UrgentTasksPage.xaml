@@ -4,11 +4,11 @@
              x:Class="AppFinally1.UrgentTasksPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="labek" Text="Имя" />
+            <Label Text="Имя" />
             <Entry Text="{Binding Name}" />
-            <Label Text="Имя" />
+            <Label Text="Описание" />
             <Entry Text="{Binding Discription}" />
-            <Label Text="Имя" />
+            <Label Text="Дата" />
             <DatePicker Date="{Binding Date}" />
             <Label Text="Наказание" />
             <Picker x:Name="pic" SelectedIndexChanged="pic_SelectedIndexChanged" SelectedIndex="0" ItemDisplayBinding="{Binding Path=Name}"></Picker>

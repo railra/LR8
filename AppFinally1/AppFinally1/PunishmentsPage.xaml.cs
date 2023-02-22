@@ -28,9 +28,16 @@ namespace AppFinally1
         }
         private async void DeleteFriend(object sender, EventArgs e)
         {
-            var punishments = (Models.Punishments)BindingContext;
-            await App.Database3.DeleteItemAsync(punishments);
-            await this.Navigation.PopAsync();
+            try
+            {
+                var punishments = (Models.Punishments)BindingContext;
+                await App.Database3.DeleteItemAsync(punishments);
+                await this.Navigation.PopAsync();
+            }
+            catch
+            {
+                DisplayAlert("Уведомление", "Невозможно удалит. Наказание привязано к заданию", "ОK");
+            }
         }
         private async void Cancel(object sender, EventArgs e)
         {

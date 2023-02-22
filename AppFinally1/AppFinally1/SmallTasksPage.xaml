@@ -6,7 +6,7 @@
         <StackLayout>
             <Label Text="Имя" />
             <Entry Text="{Binding Name}" />
-            <Label Text="Имя" />
+            <Label Text="Описание" />
             <Entry Text="{Binding Discription}" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Сохранить" Clicked="SaveFriend" />

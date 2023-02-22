@@ -30,12 +30,9 @@ namespace AppFinally1
         public UrgentTasksPage()
         {
             InitializeComponent();
-            //Iii();
             selN = (from p in  App.Database3.GetItems()
                     select p).ToList();
-            pic.ItemsSource = selN.ToList();
-            //var pun = selN.Where(v => v.Id == ((this.BindingContext as UrgentTasks).PunishmentId==0?0: (this.BindingContext as UrgentTasks).PunishmentId)).FirstOrDefault();
-            
+            pic.ItemsSource = selN.ToList(); 
           
         }
         private async void SaveFriend(object sender, EventArgs e)

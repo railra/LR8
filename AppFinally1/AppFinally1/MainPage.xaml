@@ -40,7 +40,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="Добавить" Clicked="Button_Clicked_1" />
+                    <Button Text="Добавить" Clicked="Button_Clicked_1" BackgroundColor="#0A67A3"/>
                 </StackLayout>
             </Frame>
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
@@ -60,7 +60,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="Добавить" Clicked="Button_Clicked" />
+                    <Button Text="Добавить" Clicked="Button_Clicked" BackgroundColor="#FF8E00"/>
                 </StackLayout>
             </Frame>
             <Frame BorderColor="#0A67A3" BackgroundColor="#65A6D1" CornerRadius="8">
@@ -80,13 +80,13 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="Добавить" Clicked="Button_Clicked_3" />
+                    <Button Text="Добавить" Clicked="Button_Clicked_3" BackgroundColor="#0A67A3"/>
                 </StackLayout>
             </Frame>
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Достижения" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="friends5List" ItemsSource="{Binding}" RowHeight="50" ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
+                    <ListView x:Name="friends5List" ItemsSource="{Binding}" RowHeight="50" HeightRequest="250" ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
