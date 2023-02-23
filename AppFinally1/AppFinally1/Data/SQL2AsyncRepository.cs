@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppFinally1
+namespace AppFinally1.Data
 {
     public class SQL2AsyncRepository
     {
@@ -19,22 +19,22 @@ namespace AppFinally1
 
         public async Task CreateTable()
         {
-            await database.CreateTableAsync<Models.SmallTasks>();
+            await database.CreateTableAsync<SmallTasks>();
         }
-        public async Task<List<Models.SmallTasks>> GetItemsAsync()
+        public async Task<List<SmallTasks>> GetItemsAsync()
         {
-            return await database.Table<Models.SmallTasks>().ToListAsync();
+            return await database.Table<SmallTasks>().ToListAsync();
 
         }
-        public async Task<Models.SmallTasks> GetItemAsync(int id)
+        public async Task<SmallTasks> GetItemAsync(int id)
         {
-            return await database.GetAsync<Models.SmallTasks>(id);
+            return await database.GetAsync<SmallTasks>(id);
         }
-        public async Task<int> DeleteItemAsync(Models.SmallTasks item)
+        public async Task<int> DeleteItemAsync(SmallTasks item)
         {
             return await database.DeleteAsync(item);
         }
-        public async Task<int> SaveItemAsync(Models.SmallTasks item)
+        public async Task<int> SaveItemAsync(SmallTasks item)
         {
             if (item.Id != 0)
             {
@@ -60,27 +60,27 @@ namespace AppFinally1
 
         public async Task CreateTable()
         {
-            await database.CreateTableAsync<Models.Punishments>();
+            await database.CreateTableAsync<Punishments>();
         }
-        public async Task<List<Models.Punishments>> GetItemsAsync()
+        public async Task<List<Punishments>> GetItemsAsync()
         {
-            return await database.Table<Models.Punishments>().ToListAsync();
+            return await database.Table<Punishments>().ToListAsync();
 
         }
-        public List<Models.Punishments> GetItems()
+        public List<Punishments> GetItems()
         {
-            return db.Table<Models.Punishments>().ToList();
+            return db.Table<Punishments>().ToList();
 
         }
-        public async Task<Models.Punishments> GetItemAsync(int id)
+        public async Task<Punishments> GetItemAsync(int id)
         {
-            return await database.GetAsync<Models.Punishments>(id);
+            return await database.GetAsync<Punishments>(id);
         }
-        public async Task<int> DeleteItemAsync(Models.Punishments item)
+        public async Task<int> DeleteItemAsync(Punishments item)
         {
             return await database.DeleteAsync(item);
         }
-        public async Task<int> SaveItemAsync(Models.Punishments item)
+        public async Task<int> SaveItemAsync(Punishments item)
         {
             if (item.Id != 0)
             {
@@ -105,22 +105,22 @@ namespace AppFinally1
 
         public async Task CreateTable()
         {
-            await database.CreateTableAsync<Models.UrgentTasks>();
+            await database.CreateTableAsync<UrgentTasks>();
         }
-        public async Task<List<Models.UrgentTasks>> GetItemsAsync()
+        public async Task<List<UrgentTasks>> GetItemsAsync()
         {
-            return await database.Table<Models.UrgentTasks>().ToListAsync();
+            return await database.Table<UrgentTasks>().ToListAsync();
 
         }
-        public async Task<Models.UrgentTasks> GetItemAsync(int id)
+        public async Task<UrgentTasks> GetItemAsync(int id)
         {
-            return await database.GetAsync<Models.UrgentTasks>(id);
+            return await database.GetAsync<UrgentTasks>(id);
         }
-        public async Task<int> DeleteItemAsync(Models.UrgentTasks item)
+        public async Task<int> DeleteItemAsync(UrgentTasks item)
         {
             return await database.DeleteAsync(item);
         }
-        public async Task<int> SaveItemAsync(Models.UrgentTasks item)
+        public async Task<int> SaveItemAsync(UrgentTasks item)
         {
             if (item.Id != 0)
             {
@@ -145,23 +145,23 @@ namespace AppFinally1
 
         public async Task CreateTable()
         {
-            await database.CreateTableAsync<Models.Achievments>();
+            await database.CreateTableAsync<Achievments>();
 
         }
-        public async Task<List<Models.Achievments>> GetItemsAsync()
+        public async Task<List<Achievments>> GetItemsAsync()
         {
-            return await database.Table<Models.Achievments>().ToListAsync();
+            return await database.Table<Achievments>().ToListAsync();
 
         }
-        public async Task<Models.Achievments> GetItemAsync(int id)
+        public async Task<Achievments> GetItemAsync(int id)
         {
-            return await database.GetAsync<Models.Achievments>(id);
+            return await database.GetAsync<Achievments>(id);
         }
-        public async Task<int> DeleteItemAsync(Models.Achievments item)
+        public async Task<int> DeleteItemAsync(Achievments item)
         {
             return await database.DeleteAsync(item);
         }
-        public async Task<int> SaveItemAsync(Models.Achievments item)
+        public async Task<int> SaveItemAsync(Achievments item)
         {
             if (item.Id != 0)
             {

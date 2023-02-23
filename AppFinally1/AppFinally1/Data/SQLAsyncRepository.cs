@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppFinally1
+namespace AppFinally1.Data
 {
     public class SQLAsyncRepository
     {
