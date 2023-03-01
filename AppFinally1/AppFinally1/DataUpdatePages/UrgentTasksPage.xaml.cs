@@ -65,9 +65,9 @@ namespace AppFinally1
 
         }
 
-        internal void setPunishment(UrgentTasks selectedFriend)
+        internal void setPunishment(UrgentTasks SelectedTask)
         {
-            this.CurrentUrgentTask = selectedFriend;
+            this.CurrentUrgentTask = SelectedTask;
         }
     }
 }

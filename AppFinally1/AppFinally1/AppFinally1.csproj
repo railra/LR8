@@ -11,11 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="kurs.db" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Data\kurs.db" />
+    <EmbeddedResource Include="kurs.db" />
   </ItemGroup>
 
   <ItemGroup>

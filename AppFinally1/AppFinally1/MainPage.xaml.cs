@@ -40,47 +40,47 @@ namespace AppFinally1
             // создание таблицы, если ее нет
             await App.Database.CreateTable();
             // привязка данных
-            friendsList.ItemsSource = await App.Database.GetItemsAsync();
-            friends2List.ItemsSource = await App.Database2.GetItemsAsync();
-            friends3List.ItemsSource = await App.Database4.GetItemsAsync();
-            friends4List.ItemsSource = await App.Database3.GetItemsAsync();
-            friends5List.ItemsSource = await App.Database5.GetItemsAsync();
+            BTList.ItemsSource = await App.Database.GetItemsAsync();
+            STList.ItemsSource = await App.Database2.GetItemsAsync();
+            PList.ItemsSource = await App.Database4.GetItemsAsync();
+            UTList.ItemsSource = await App.Database3.GetItemsAsync();
+            AList.ItemsSource = await App.Database5.GetItemsAsync();
 
             base.OnAppearing();
         }
-        // обработка нажатия элемента в списке
+        
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Models.BigTasks selectedFriend = (Models.BigTasks)e.SelectedItem;
-            BigTasksPage friendPage = new BigTasksPage();
-            friendPage.BindingContext = selectedFriend;
-            await Navigation.PushAsync(friendPage);
+            Models.BigTasks selectedTask = (Models.BigTasks)e.SelectedItem;
+            BigTasksPage TPAge = new BigTasksPage();
+            TPAge.BindingContext = selectedTask;
+            await Navigation.PushAsync(TPAge);
         }
         // обработка нажатия кнопки добавления
         private async void Button_Clicked_2(object sender, EventArgs e)
         {
             Models.BigTasks friend = new Models.BigTasks();
-            BigTasksPage friendPage = new BigTasksPage();
-            friendPage.BindingContext = friend;
-            await Navigation.PushAsync(friendPage);
+            BigTasksPage TPAge = new BigTasksPage();
+            TPAge.BindingContext = friend;
+            await Navigation.PushAsync(TPAge);
         }
 
         private async void friends2List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Models.SmallTasks selectedFriend = (Models.SmallTasks)e.SelectedItem;
-            SmallTasksPage friendPage = new SmallTasksPage();
-            friendPage.BindingContext = selectedFriend;
-            await Navigation.PushAsync(friendPage);
+            Models.SmallTasks SelectedTask = (Models.SmallTasks)e.SelectedItem;
+            SmallTasksPage TPAge = new SmallTasksPage();
+            TPAge.BindingContext = SelectedTask;
+            await Navigation.PushAsync(TPAge);
         }
 
         private async void friends3List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Models.UrgentTasks selectedFriend = (Models.UrgentTasks)e.SelectedItem;
-            UrgentTasksPage friendPage = new UrgentTasksPage();
-            friendPage.BindingContext = selectedFriend;
-            friendPage.setPunishment(selectedFriend);
-            friendPage.Pic();
-            await Navigation.PushAsync(friendPage);
+            Models.UrgentTasks SelectedTask = (Models.UrgentTasks)e.SelectedItem;
+            UrgentTasksPage TPAge = new UrgentTasksPage();
+            TPAge.BindingContext = SelectedTask;
+            TPAge.setPunishment(SelectedTask);
+            TPAge.Pic();
+            await Navigation.PushAsync(TPAge);
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

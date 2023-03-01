@@ -4,7 +4,7 @@
              x:Class="AppFinally1.AchievmentsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Имя" />
+            <Label Text="Название" />
             <Entry Text="{Binding Name}" />
             <Label Text="Родитель" />
             <Entry Text="{Binding Parrent}" />

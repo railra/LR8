@@ -92,6 +92,7 @@ namespace AppFinally1
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+            //MainPage = new FlyoutPage();
         }
 
         protected override void OnStart()

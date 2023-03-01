@@ -16,6 +16,7 @@ namespace AppFinally1
         {
             InitializeComponent();
         }
+        FlyoutPage fl = new FlyoutPage();
         private async void SaveFriend(object sender, EventArgs e)
         {
             var friend = (Models.BigTasks)BindingContext;

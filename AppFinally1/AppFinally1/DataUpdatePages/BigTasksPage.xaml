@@ -4,11 +4,11 @@
              x:Class="AppFinally1.BigTasksPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Имя" />
+            <Label Text="Название" />
             <Entry Text="{Binding Name}" />
             <Label Text="Родитель" />
             <Entry Text="{Binding Parrent}" />
-            <Label Text="Имя" />
+            <Label Text="Описание" />
             <Entry Text="{Binding Discription}" />
             <Label Text="Дата" />
             <DatePicker Date="{Binding Date}" />

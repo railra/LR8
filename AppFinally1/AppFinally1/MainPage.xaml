@@ -7,7 +7,7 @@
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Большие задания" FontSize="Large"  TextColor="Black"/>
-                    <ListView x:Name="friendsList" ItemsSource="{Binding}" ItemSelected="OnItemSelected" HeightRequest="250" SeparatorColor="#FF8E00" >
+                    <ListView x:Name="BTList" ItemsSource="{Binding}" ItemSelected="OnItemSelected" HeightRequest="250" SeparatorColor="#FF8E00" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -27,7 +27,7 @@
             <Frame BorderColor="#0A67A3" BackgroundColor="#65A6D1" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Малые задания" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="friends2List" ItemsSource="{Binding}" ItemSelected="friends2List_ItemSelected" HeightRequest="250" SeparatorColor="#0A67A3">
+                    <ListView x:Name="STList" ItemsSource="{Binding}" ItemSelected="friends2List_ItemSelected" HeightRequest="250" SeparatorColor="#0A67A3">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -46,7 +46,7 @@
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Срочные задания" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="friends3List" ItemsSource="{Binding}" RowHeight="50" ItemSelected="friends3List_ItemSelected" HeightRequest="250" SeparatorColor="#FF8E00" >
+                    <ListView x:Name="PList" ItemsSource="{Binding}" RowHeight="50" ItemSelected="friends3List_ItemSelected" HeightRequest="250" SeparatorColor="#FF8E00" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -66,7 +66,7 @@
             <Frame BorderColor="#0A67A3" BackgroundColor="#65A6D1" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Наказания" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="friends4List" ItemsSource="{Binding}" ItemSelected="friends4List_ItemSelected" HeightRequest="250" RowHeight="60" SeparatorColor="#0A67A3">
+                    <ListView x:Name="UTList" ItemsSource="{Binding}" ItemSelected="friends4List_ItemSelected" HeightRequest="250" RowHeight="60" SeparatorColor="#0A67A3">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -86,7 +86,7 @@
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Достижения" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="friends5List" ItemsSource="{Binding}" RowHeight="50" HeightRequest="250" ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
+                    <ListView x:Name="AList" ItemsSource="{Binding}" RowHeight="50" HeightRequest="250" ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
