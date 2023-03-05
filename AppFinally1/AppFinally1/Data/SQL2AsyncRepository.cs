@@ -11,10 +11,11 @@ namespace AppFinally1.Data
     {
 
         SQLiteAsyncConnection database;
-
+        private SQLiteConnection db;
         public SQL2AsyncRepository(string databasePath)
         {
             database = new SQLiteAsyncConnection(databasePath);
+            db = new SQLiteConnection(databasePath);
         }
 
         public async Task CreateTable()
@@ -25,6 +26,10 @@ namespace AppFinally1.Data
         {
             return await database.Table<SmallTasks>().ToListAsync();
 
+        }
+        public List<Models.SmallTasks> GetItems()
+        {
+            return db.Table<Models.SmallTasks>().ToList();
         }
         public async Task<SmallTasks> GetItemAsync(int id)
         {
@@ -96,11 +101,12 @@ namespace AppFinally1.Data
     public class SQL4AsyncRepository
     {
         SQLiteAsyncConnection database;
-
+        SQLiteConnection db;
 
         public SQL4AsyncRepository(string databasePath)
         {
             database = new SQLiteAsyncConnection(databasePath);
+            db = new SQLiteConnection(databasePath);
         }
 
         public async Task CreateTable()
@@ -111,6 +117,10 @@ namespace AppFinally1.Data
         {
             return await database.Table<UrgentTasks>().ToListAsync();
 
+        }
+        public List<UrgentTasks> GetItems()
+        {
+            return db.Table<UrgentTasks>().ToList();
         }
         public async Task<UrgentTasks> GetItemAsync(int id)
         {
@@ -136,11 +146,12 @@ namespace AppFinally1.Data
     public class SQL5AsyncRepository
     {
         SQLiteAsyncConnection database;
-
+        private SQLiteConnection db;
 
         public SQL5AsyncRepository(string databasePath)
         {
             database = new SQLiteAsyncConnection(databasePath);
+            db = new SQLiteConnection(databasePath);
         }
 
         public async Task CreateTable()
@@ -151,7 +162,10 @@ namespace AppFinally1.Data
         public async Task<List<Achievments>> GetItemsAsync()
         {
             return await database.Table<Achievments>().ToListAsync();
-
+        }
+        public List<Achievments> GetItems()
+        {
+            return db.Table<Achievments>().ToList();
         }
         public async Task<Achievments> GetItemAsync(int id)
         {

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinally1.MainMenu">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Image">
+                <Setter Property="WidthRequest" Value="90"/>
+                <Setter Property="HeightRequest" Value="90"/>
+            </Style>
+            <Style TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="HeightRequest" Value="1"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontFamily" Value="Comic"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="White">
+            <BoxView/>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="https://i.postimg.cc/Kj7pzQRC/image.jpg"></Image>
+                <Label Text="Большие задачи" ></Label>
+            </StackLayout>
+            <BoxView />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped2"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="https://i.postimg.cc/tTJ9FZhr/image.jpg"></Image>
+                <Label Text="Малые задачи" ></Label>
+            </StackLayout>
+            <BoxView />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped3"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="https://i.postimg.cc/vHmpPFjK/116259189.jpg"></Image>
+                <Label Text="Срочные задачи" ></Label>
+            </StackLayout>
+            <BoxView />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped4"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="https://i.postimg.cc/25PZtD27/image.jpg"></Image>
+                <Label Text="Наказания" ></Label>
+            </StackLayout>
+            <BoxView />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped5"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="https://i.postimg.cc/P5HpYyN2/image.jpg"></Image>
+                <Label Text="Достижения" ></Label>
+            </StackLayout>
+            <BoxView />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

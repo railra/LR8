@@ -4,7 +4,9 @@ using System.Reflection;
 using AppFinally1.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+[assembly: ExportFont("MISTRAL.TTF", Alias = "Mistral")]
+[assembly: ExportFont("comic.ttf", Alias = "Comic")]
+[assembly: ExportFont("LeoHand.ttf", Alias = "LeoHand")]
 namespace AppFinally1
 {
     public partial class App : Application
@@ -91,7 +93,7 @@ namespace AppFinally1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainMenu());
             //MainPage = new FlyoutPage();
         }
 

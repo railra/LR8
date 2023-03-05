@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace AppFinally1.Data
 {
@@ -14,6 +15,7 @@ namespace AppFinally1.Data
         public SQLAsyncRepository(string databasePath)
         {
             database = new SQLiteAsyncConnection(databasePath);
+            db = new SQLiteConnection(databasePath);
         }
 
         public async Task CreateTable()
@@ -22,8 +24,8 @@ namespace AppFinally1.Data
         }
         public async Task<List<Models.BigTasks>> GetItemsAsync()
         {
-            return await database.Table<Models.BigTasks>().ToListAsync();
 
+            return await database.Table<Models.BigTasks>().ToListAsync();
         }
         public async Task<Models.BigTasks> GetItemAsync(int id)
         {
@@ -32,7 +34,6 @@ namespace AppFinally1.Data
         public List<Models.BigTasks> GetItems()
         {
             return db.Table<Models.BigTasks>().ToList();
-
         }
         public async Task<int> DeleteItemAsync(Models.BigTasks item)
         {

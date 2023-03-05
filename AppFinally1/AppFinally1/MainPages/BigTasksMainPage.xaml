@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinally1.MainPages.BigTasksMainPage"
+             Title="Большие задачи">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="BTList" ItemsSource="{Binding}" ItemSelected="OnItemSelected" HeightRequest="250" SeparatorColor="#060158" BackgroundColor="#EEDA86">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" FontSize="28" FontFamily="LeoHand" TextColor="Black" LineBreakMode="TailTruncation"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Добавить" Clicked="Button_Clicked_2" BackgroundColor="#FF8E00"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

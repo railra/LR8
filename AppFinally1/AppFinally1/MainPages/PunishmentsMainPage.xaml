@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinally1.MainPages.PunishmentsMainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="PList" ItemsSource="{Binding}" ItemSelected="PList_ItemSelected" HeightRequest="250" RowHeight="120" SeparatorColor="#060158" BackgroundColor="#EEDA86">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Name}" FontSize="28" FontFamily="LeoHand" TextColor="Black" LineBreakMode="TailTruncation"/>
+                                    <Label Text="{Binding Discription}" FontSize="23" FontFamily="LeoHand" TextColor="Black" HeightRequest="80" BackgroundColor="#EFCD41"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Добавить" Clicked="Button_Clicked_3" BackgroundColor="#0A67A3"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

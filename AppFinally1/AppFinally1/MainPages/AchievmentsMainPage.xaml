@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinally1.MainPages.AchievmentsMainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="AList" ItemsSource="{Binding}" RowHeight="50"  ItemSelected="AList_ItemSelected" SeparatorColor="#060158" BackgroundColor="#EEDA86" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Name}" FontSize="28"  FontFamily="LeoHand" TextColor="Black" LineBreakMode="TailTruncation"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

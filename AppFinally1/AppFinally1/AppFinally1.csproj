@@ -11,7 +11,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="kurs.db" />
+    <None Remove="FontFamilies\comic.ttf" />
+    <None Remove="FontFamilies\comicbd.ttf" />
+    <None Remove="FontFamilies\comici.ttf" />
+    <None Remove="FontFamilies\comicz.ttf" />
+    <None Remove="FontFamilies\LeoHand.ttf" />
+    <None Remove="g.jpg" />
+    <None Remove="MISTRAL.TTF" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\kurs.db" />
+    <EmbeddedResource Include="FontFamilies\comic.ttf" />
+    <EmbeddedResource Include="FontFamilies\comicbd.ttf" />
+    <EmbeddedResource Include="FontFamilies\comici.ttf" />
+    <EmbeddedResource Include="FontFamilies\comicz.ttf" />
+    <EmbeddedResource Include="FontFamilies\LeoHand.ttf" />
+    <EmbeddedResource Include="FontFamilies\MISTRAL.TTF" />
+    <EmbeddedResource Include="g.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +51,24 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DataUpdatePages\UrgentTasksPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPages\AchievmentsMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPages\BigTasksMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPages\PunishmentsMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPages\SmallTasksMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPages\UrgentTasksMainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

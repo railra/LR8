@@ -21,7 +21,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="Добавить" Clicked="Button_Clicked_2" BackgroundColor="#FF8E00"/>
+                    <Button  Text="Добавить" Clicked="Button_Clicked_2" BackgroundColor="#FF8E00"/>
                 </StackLayout>
             </Frame>
             <Frame BorderColor="#0A67A3" BackgroundColor="#65A6D1" CornerRadius="8">
@@ -86,7 +86,7 @@
             <Frame BorderColor="#FF8E00" BackgroundColor="#FFC173" CornerRadius="8">
                 <StackLayout>
                     <Label Text="Достижения" FontSize="Large" TextColor="Black"/>
-                    <ListView x:Name="AList" ItemsSource="{Binding}" RowHeight="50" HeightRequest="250" ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
+                    <ListView x:Name="AList" ItemsSource="{Binding}" RowHeight="50"  ItemSelected="friends5List_ItemSelected" SeparatorColor="#FF8E00" >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
